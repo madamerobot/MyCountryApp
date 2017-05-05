@@ -20,14 +20,14 @@ var countryinformation = function (consoleInput) {
 
 	readerfile.reader('./countries.json', function(x) {
 
-		console.log("Callback is starting now");
+		// console.log("Callback is starting now");
 
 		for (var i = 0; i < x.length; i++){
 			if (x[i].name === consoleInput){
-				console.log("Countryname: "+x[i].name+" "+"TopLevelDomain: "+" "+x[i].topLevelDomain);
+				console.log("Countryname: "+x[i].name+"\n"+"TopLevelDomain: "+x[i].topLevelDomain);
 			}
 		}
-		console.log("Callback has now ended");
+		// console.log("Callback has now ended");
 	});
 }	
 
