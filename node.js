@@ -9,18 +9,6 @@ var readerfile = require('./json-file-reader');
 //Assiging 3rd value of terminal input to variable consoleInput
 var consoleInput = process.argv[2];
 
-
-//JQUERY
-
-function browserdisplay() {
-
-	$('#country').on('input', function(evenObject){
-		var consoleInput = evenObject.target.value;
-		var countryinfo = countryinformation("Germany");
-		$('#output').text(countryinfo);
-	});
-}
-
 //Function definition for countryinformation
 //Intake of one parameter, which comes from console
 var countryinformation = function (consoleInput) {
@@ -36,12 +24,11 @@ var countryinformation = function (consoleInput) {
 
 		for (var i = 0; i < x.length; i++){
 			if (x[i].name === consoleInput){
-				console.log("Countryname: "+x[i].name+" "+"TopLD"+" "+x[i].topLevelDomain);
+				console.log("Countryname: "+x[i].name+" "+"TopLevelDomain: "+" "+x[i].topLevelDomain);
 			}
 		}
 		console.log("Callback has now ended");
 	});
-	browserdisplay();
 }	
 
 	//TESTING FUNCTION BY CALLING IT
