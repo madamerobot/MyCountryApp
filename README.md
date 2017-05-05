@@ -1,4 +1,4 @@
-<h1>MyCountryApp<h1>
+<h1>MyCountryApp</h1>
 <p>This app delivers country-name and TopLevelDomain for any country you request.<p>
 
 <h1>Getting Started</h1>
